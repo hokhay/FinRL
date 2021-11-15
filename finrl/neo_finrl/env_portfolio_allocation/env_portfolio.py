@@ -192,7 +192,7 @@ class StockPortfolioEnv(gym.Env):
 
             # the reward is the new portfolio value or end portfolo value
             self.reward = new_portfolio_value
-            # print("Step reward: ", self.reward)
+            print("Step reward: ", self.reward)
             # self.reward = self.reward*self.reward_scaling
 
         return self.state, self.reward, self.terminal, {}
